@@ -3,10 +3,10 @@ import itertools
 import multiprocessing
 import time
 import string
-import pandas as pd
 from nltk.corpus import stopwords
 
 
+# Class for simple map reduce
 class SimpleMapReduce(object):
 
     def __init__(self, map_func, reduce_func, num_workers=None):
@@ -27,6 +27,8 @@ class SimpleMapReduce(object):
         return reduced_values
 
 def file_to_words(filename):
+
+    # Initializes stop words for the mapper
     STOP_WORDS = stopwords.words('english')
     twitter_stopwords = ['realdonaldtrump','amp', 'rt', 'co', 'https', 'http', 'trump']
     STOP_WORDS.extend(twitter_stopwords)
@@ -56,6 +58,7 @@ if __name__ == '__main__':
     import operator
     import glob
 
+    # Uses glob to read the txt file
     input_files = glob.glob('*.txt')
 
     mapper = SimpleMapReduce(file_to_words, count_words)
