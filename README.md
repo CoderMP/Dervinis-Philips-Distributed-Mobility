@@ -15,3 +15,4 @@
 ### Sequential MapReduce
 ![sequential-map-red-results](images/sequential-map-red-results.png)
 ### Parallel MapReduce
+![parallel-map-results](images/parallel-map-results.png)
