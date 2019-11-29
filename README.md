@@ -1,21 +1,17 @@
 # Dervinis Philips Distributed Mobility Assignment 2
 
 ## Team Members
-Deivis Dervinis | 991436536
-Mark Philips | 991365421
+- Deivis Dervinis | 991436536
+- Mark Philips | 991365421
 
 ## Sequential MapReduce
-Language of choice: Python
+- Language of choice: Python
 
 ## Parallel MapReduce
-Language of choice: Python
-Distributed solution choice: Multiprocessor
+- Language of choice: Python
+- Distributed solution choice: Multiprocessor
 
 ## Program Output
 ### Sequential MapReduce
-
+![sequential-map-red-results](images/sequential-map-red-results.png)
 ### Parallel MapReduce
-
-
-To use the scripts, CD to the directory, Run
-cat word.txt | python2 mapper.py | sort -k1,1 | python2 reducer.py
